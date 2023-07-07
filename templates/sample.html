@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{background-image: url(https://media.istockphoto.com/id/1434115118/photo/diamond-on-golden-background.webp?b=1&s=170667a&w=0&k=20&c=5A0Zn8jhVkl_9Eo8B62lDrNlIBLRM8E5qfxLP_1gwo8=);
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size :cover;
+                 }
+    </style>
+</head>
+<body>
+    <h1 style="font-size:500%;" style="color: white;">Diamond Price Prediction</h1>
+    <form method="post" action="/Diamond_Price">
+
+        <h1><b>Carat : </b> <input type="text" name="carat" size = "20" placeholder="Enter value betweeen 0.2--5.01" /></h1>
+        
+        <h1><b>Cut : </b> <select name="cut" placeholder="Quality of the cut"></h1>
+                            <option>Ideal</option>
+                            <option>Premium</option>
+                            <option>Very Good</option>
+                            <option>Good</option>
+                            <option>Fair</option></select>
+
+        <h1><b>Color : </b> <input type="text" name="color" size ="35" placeholder="Enter between D-J J(worst) to D(best)"></h1>
+            
+        <h1><b>Clarity : </b> <select name="clarity" placeholder="(I1 (worst), SI2, SI1, VS2, VS1, VVS2, VVS1, IF (best))"></h1>
+                                <option>I1</option>
+                                <option>SI</option>
+                                <option>SI2</option>
+                                <option>VS1</option>
+                                <option>VS2</option>
+                                <option>VVS1</option>
+                                <option>VVS2</option>
+                                <option>IF</option></select>
+
+        <h1><b>Depth : </b> <input type="text" name="depth" size = "30" placeholder="Enter value betweeen 43-79" /></h1>
+
+        <h1><b>Table : </b> <input type="text" name="table" size = "30" placeholder="Enter value betweeen 43-95" /></h1> 
+
+        <h1><b>X : </b> <input type="text" name="x" size = "30" placeholder="Enter length in mm between(0-10.74)"/></h1>
+
+        <h1><b>Y : </b> <input type="text" name="y" size = "30" placeholder="Enter width in mm between(0-58.9)"/></h1>
+
+        <h1><b>Z : </b> <input type="text" name="z" size = "30" placeholder="Enter depth in mm between(0-31.8)"/></h1>
+                                
+        <input type="submit" value="Get Diamond Price"/>
+        <input type="reset"/>
+        <br/><br/>
+
+        <h2><b>The predicted price of a Diamond for above selected features is {{predicted_price}} $ </b></h2>
+
+
+
+              
+        
+    </form>
+</body>
+</html>
