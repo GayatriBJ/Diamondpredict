@@ -38,6 +38,23 @@ The dataset has  53940 rows  and 10 columns.
 ![image](https://github.com/GayatriBJ/Diamondpredict/assets/125629830/b03686d2-d7a6-4eb7-8c97-fd529ac856a9)
 
 ## EDA & Feature Engineering :
-Encoding object columns into categorical columns.
+In this step, we have to analyze the data.
+We check for :
+            1) checking & handling missing values
+            2) identify outliers
+            3) remove outliers
+            4) encoding of categorical variables
+            5) Feature Transformation
+            6) Scaling
+
+## Feature Selection / Feature Extraction :
+The goal of feature selection techniques in machine learning is to find the best set of features that allows one to build optimized models of studied phenomena.
+It helps Improves Model Performance
+It helps Optimizes Model Training Time
+Feature Selection Methods : 
+                        Filter Method      
+                        Wrapper Method
+                        Embedded Method  
+
 
 
