@@ -34,27 +34,74 @@ Each of the individual 4Cs of diamonds may interact with one another to impact a
 10.table :Width(43 to 95) of the top of diamond relative to widest point
 
 ## Data Gathering :
+
 The dataset has  53940 rows  and 10 columns. 
 ![image](https://github.com/GayatriBJ/Diamondpredict/assets/125629830/b03686d2-d7a6-4eb7-8c97-fd529ac856a9)
 
 ## EDA & Feature Engineering :
-In this step, we have to analyze the data.
-We check for :
-            1) checking & handling missing values
-            2) identify outliers
-            3) remove outliers
-            4) encoding of categorical variables
-            5) Feature Transformation
-            6) Scaling
+
+In this step, we have to analyze the data. We check for :
+1) checking & handling missing values
+2) identify outliers
+3) remove outliers
+4) encoding of categorical variables
+5) Feature Transformation
+6) Scaling
 
 ## Feature Selection / Feature Extraction :
+
 The goal of feature selection techniques in machine learning is to find the best set of features that allows one to build optimized models of studied phenomena.
 It helps Improves Model Performance
 It helps Optimizes Model Training Time
+
 Feature Selection Methods : 
-                        Filter Method      
-                        Wrapper Method
-                        Embedded Method  
+1) Filter Method      
+2) Wrapper Method
+3) Embedded Method  
+
+## Model Training :
+
+In this step, Model is train using different machine learning techniques. I have used Linear Regression.
+
+After performing standardization, dataset is splited with a ratio of 0.2 that means 80% data for training and 20% data for validation process.
+
+## Model Evaluation : 
+
+To check model is performing well on training data set as well as testing data data we need evaluate the model using metrics 
+
+Metrics used are : 
+1) Mean Square error
+2) Mean Absolute error
+3) Squareroot of Mean Square error
+4) R2 score
+5) Adjusted R2 score
 
 
+## Web development Framework :
+In this project flask method is used to write API's for the project so that user can interacte with help of html web to input the value and to get the output
+
+## Deployment on AWS :
+For public access we have used AWS service, so that anyone can access the website and can use to get the results.
+
+## Important Files
+
+### interface.py :-
+
+In this file we have write the API's and by running this file you can start server.
+
+### util.py :-
+
+This file contains the basic function that will help to interface file to get the results
+
+### config.py :-
+
+In this file you can change the file path for the pickle file and json file. Also, you can change the port number according to the requirement
+
+### requirement.txt :-
+
+This file contain necessary libraries and its version, user need to install this libraries while running this project.
+
+### source.html :-
+
+This html file, contain website page coding.
 
